@@ -1,31 +1,66 @@
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-// Base Class (Parent)
-class Animal {
-public:
-    void eat() {
-        cout << "I can eat! yam yammm...." << endl;
-    }
-};
+// // Base Class (Parent)
+// class Vehicle {
+// public:
+//     void start() {
+//         cout << "Vehicle started." << endl;
+//     }
+// };
 
-// Derived Class (Child)
-class Dog : public Animal {
-public:
-    void bark() {
-        cout << "I can bark! Woof Woof!" << endl;
-    }
-};
+// // Derived Class (Child)
+// class Car : public Vehicle {
+// public:
+//     void drive() {
+//         cout << "Car is running." << endl;
+//     }
+// };
 
-int main() {
-    // Child class ka object banaya
-    Dog myDog;
+// int main() {
+//     Car myCar;
+//     myCar.start(); // Parent ka function
+//     myCar.drive(); // Child ka apna function
+//     return 0;
+// }
 
-    // Child class ka apna function call kiya
-    myDog.bark();
+// #include <iostream>
 
-    // Parent class ka function call kiya (Inheritance ki wajah se mila)
-    myDog.eat();
+// using namespace std;
 
-    return 0;
-}
+// class Car
+// {
+// public:
+//     void start(){
+//         cout << "car started:";
+//     }
+// };
+
+// class Music
+// {
+// public:
+//     void sing() 
+//     {  
+//         cout << "singing:"<< endl;
+//     }
+// };
+
+// class smartCar : public Car, public Music
+// {
+//     public:
+//     void drive()
+//     {
+//         cout << "arya are you ready:" << endl;
+//     }
+// };
+
+// int main()
+// {
+//     smartCar obj;
+//     obj.start();
+//     obj.sing();
+//     obj.drive();
+//     return 0;
+
+
+// }
