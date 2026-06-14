@@ -64,3 +64,45 @@
 
 
 // }
+
+#include<iostream>
+
+using namespace std;
+
+class grandFather {
+    public:
+    void House(){
+        cout<<"Dadu have house "<<endl;
+
+    } 
+};
+
+class Father{
+    public:
+    void Car() {
+        cout <<"Father have car"<<endl;
+
+    }
+
+};
+
+class Son : public grandFather, public Father {
+    public:
+    void myBike(){
+        cout<<"I have bike "<< endl;
+    }
+};
+
+int main (){
+    Son myObj;
+    myObj.House();
+    myObj.Car();
+    myObj.myBike();
+
+    return 0;
+
+
+
+}
+
+
